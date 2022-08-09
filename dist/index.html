@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Piero demo</title>
+        <style>
+            html, body {
+                width: 100%;
+                height: 100%;
+            }
+
+            body {
+                background: #DDDDDD;
+                padding: 0;
+                margin: 0;
+            }
+
+            .full-frame {
+                width: 100%;
+                height: 100%;
+                padding: 30px;
+                box-sizing: border-box;
+            }
+
+            .canvas-board {
+                padding: 0;
+                position: relative;
+                overflow: hidden;
+            }
+
+            .canvas-board canvas {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+            #my-board {
+                width: 100% !important;
+                height: 100% !important;
+                background: white;
+            }
+
+            .styled-text-edit {
+                position: absolute;
+                white-space: pre-wrap;
+                background: transparent;
+                resize: none;
+                border: none;
+                outline: none;
+                overflow: hidden;
+
+                padding: 0;
+                margin: 0;
+            }
+        </style>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Hanalei&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="full-frame">
+            <div class="canvas-board" id="my-board"></div>
+        </div>
+        <script src="dev.js"></script>
+        <script>
+            const boardItemManager = Piero.create("my-board");
+            Piero.fillSamples(boardItemManager);
+        </script>
+    </body>
+</html>

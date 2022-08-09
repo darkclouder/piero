@@ -1,0 +1,16 @@
+# Dot files
+**/.*
+!.gitignore
+!.eslintrc.js
+!.mocharc.js
+!.prettierignore
+!.prettierrc.js
+
+# Build artifacts
+/dist/bundle.js
+/dist/production.js
+/dist/dev.js
+/coverage
+
+# Dependency directories
+node_modules/
