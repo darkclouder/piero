@@ -1,5 +1,6 @@
 # piero
 piero is the underlying HTML canvas renderer used in [Ledavio moodboards](https://ledavio.design/).
+You can also check out this [demo](https://darkclouder.github.io/piero/index.html).
 
 piero has a completly custom
     event system (including click, drag, etc),
