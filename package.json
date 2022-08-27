@@ -7,7 +7,7 @@
     "license": "MIT",
     "author": "darkclouder <2065342+darkclouder@users.noreply.github.com>",
     "scripts": {
-        "build": "npm run lint && npm run build-no-check",
+        "build": "npm run check && npm run build-no-check",
         "build-no-check": "webpack --mode=production",
         "build-dev": "webpack --mode=development",
         "check": "npm run lint && npm run testcov",
@@ -37,23 +37,23 @@
     "devDependencies": {
         "@istanbuljs/nyc-config-typescript": "^1.0.1",
         "@types/chai": "^4.2.14",
-        "@types/css-font-loading-module": "0.0.4",
+        "@types/css-font-loading-module": "0.0.7",
         "@types/mocha": "^8.0.3",
         "@typescript-eslint/eslint-plugin": "^5.5.0",
         "chai": "^4.2.0",
         "eslint": "^8.4.0",
         "eslint-config-prettier": "^8.3.0",
         "eslint-plugin-simple-import-sort": "^7.0.0",
-        "mocha": "^8.2.0",
+        "mocha": "^10.0.0",
         "nyc": "^15.1.0",
         "prettier": "2.1.2",
         "ts-loader": "^8.0.4",
-        "ts-node": "^9.0.0",
+        "ts-node": "^10.9.1",
         "tsconfig-paths": "^3.9.0",
         "tsconfig-paths-webpack-plugin": "^3.3.0",
         "typescript": "^4.0.3",
-        "webpack": "^5.61.0",
-        "webpack-cli": "^4.9.1",
-        "webpack-dev-server": "^4.6.0"
+        "webpack": "^5.74.0",
+        "webpack-cli": "^4.10.0",
+        "webpack-dev-server": "^4.10.0"
     }
 }
