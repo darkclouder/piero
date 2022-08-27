@@ -1,7 +1,7 @@
-import type { BoundingBoxHolder } from "@canvas/board/objects/GeometricObject";
-import type { BoundingBox } from "@canvas/primitives/space";
-import type { RenderObject } from "@canvas/render/RenderObject";
-import { DebugConfig } from "@config/debug";
+import type { BoundingBoxHolder } from "canvas/board/objects/GeometricObject";
+import type { BoundingBox } from "canvas/primitives/space";
+import type { RenderObject } from "canvas/render/RenderObject";
+import { DebugConfig } from "config/debug";
 
 import { RenderContext } from "./RenderContext";
 import type { Viewport } from "./Viewport";

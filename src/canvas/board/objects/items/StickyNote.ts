@@ -1,9 +1,9 @@
-import type { Board } from "@canvas/board/Board";
-import type { Font } from "@canvas/board/controllers/board/FontController";
-import { Vector2 } from "@canvas/primitives/space";
-import type { Optional } from "@canvas/primitives/types";
-import type { RenderContext } from "@canvas/render/RenderContext";
-import type { Viewport } from "@canvas/render/Viewport";
+import type { Board } from "canvas/board/Board";
+import type { Font } from "canvas/board/controllers/board/FontController";
+import { Vector2 } from "canvas/primitives/space";
+import type { Optional } from "canvas/primitives/types";
+import type { RenderContext } from "canvas/render/RenderContext";
+import type { Viewport } from "canvas/render/Viewport";
 
 import type { GeometricObject } from "../GeometricObject";
 import { BlockText } from "./BlockText";

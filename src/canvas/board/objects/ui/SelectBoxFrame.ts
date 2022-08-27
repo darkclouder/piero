@@ -1,8 +1,8 @@
-import { GeometricObject } from "@canvas/board/objects/GeometricObject";
-import { BoundingBox, Vector2 } from "@canvas/primitives/space";
-import type { RenderContext } from "@canvas/render/RenderContext";
-import type { Viewport } from "@canvas/render/Viewport";
-import { defaultFrameColor, defaultFrameFill } from "@config/draw";
+import { GeometricObject } from "canvas/board/objects/GeometricObject";
+import { BoundingBox, Vector2 } from "canvas/primitives/space";
+import type { RenderContext } from "canvas/render/RenderContext";
+import type { Viewport } from "canvas/render/Viewport";
+import { defaultFrameColor, defaultFrameFill } from "config/draw";
 
 export class SelectBoxFrame extends GeometricObject {
     constructor(

@@ -1,12 +1,12 @@
-import type { Board } from "@canvas/board/Board";
-import { canRotate } from "@canvas/board/controllers/BoardMode";
-import { showRotateCursor } from "@canvas/board/controllers/objects/RotateObjectController";
-import { Group } from "@canvas/board/objects/foundation/Group";
-import { ResizeHandlePositioning } from "@canvas/board/objects/ui/selectable/ResizeHandle";
-import { RotateCollider } from "@canvas/board/objects/ui/selectable/RotateCollider";
-import type { SelectionOverlay } from "@canvas/board/objects/ui/selectable/SelectionOverlay";
-import { resetCursor } from "@canvas/primitives/dom";
-import { Vector2 } from "@canvas/primitives/space";
+import type { Board } from "canvas/board/Board";
+import { canRotate } from "canvas/board/controllers/BoardMode";
+import { showRotateCursor } from "canvas/board/controllers/objects/RotateObjectController";
+import { Group } from "canvas/board/objects/foundation/Group";
+import { ResizeHandlePositioning } from "canvas/board/objects/ui/selectable/ResizeHandle";
+import { RotateCollider } from "canvas/board/objects/ui/selectable/RotateCollider";
+import type { SelectionOverlay } from "canvas/board/objects/ui/selectable/SelectionOverlay";
+import { resetCursor } from "canvas/primitives/dom";
+import { Vector2 } from "canvas/primitives/space";
 
 export class RotateFrame extends Group {
     constructor(

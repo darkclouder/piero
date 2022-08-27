@@ -1,13 +1,13 @@
-import type { Board } from "@canvas/board/Board";
-import type { MoveObjectEvent } from "@canvas/board/controllers/objects/MoveObjectController";
-import type { ResizeObjectEvent } from "@canvas/board/controllers/objects/ResizeObjectController";
-import { worldSpaceResize } from "@canvas/board/controllers/objects/ResizeObjectController";
-import type { RotateObjectEvent } from "@canvas/board/controllers/objects/RotateObjectController";
-import { GeometricObject } from "@canvas/board/objects/GeometricObject";
-import { SelectionOptions } from "@canvas/board/objects/ui/selectable/Selectable";
-import { BoundingBox, Vector2 } from "@canvas/primitives/space";
-import type { Optional } from "@canvas/primitives/types";
-import type { Viewport } from "@canvas/render/Viewport";
+import type { Board } from "canvas/board/Board";
+import type { MoveObjectEvent } from "canvas/board/controllers/objects/MoveObjectController";
+import type { ResizeObjectEvent } from "canvas/board/controllers/objects/ResizeObjectController";
+import { worldSpaceResize } from "canvas/board/controllers/objects/ResizeObjectController";
+import type { RotateObjectEvent } from "canvas/board/controllers/objects/RotateObjectController";
+import { GeometricObject } from "canvas/board/objects/GeometricObject";
+import { SelectionOptions } from "canvas/board/objects/ui/selectable/Selectable";
+import { BoundingBox, Vector2 } from "canvas/primitives/space";
+import type { Optional } from "canvas/primitives/types";
+import type { Viewport } from "canvas/render/Viewport";
 
 export interface BoardPositionable {
     position: Vector2;

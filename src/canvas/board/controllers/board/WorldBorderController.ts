@@ -1,5 +1,5 @@
-import type { Board } from "@canvas/board/Board";
-import { WorldBorder } from "@canvas/board/objects/ui/WorldBorder";
+import type { Board } from "canvas/board/Board";
+import { WorldBorder } from "canvas/board/objects/ui/WorldBorder";
 
 export class WorldBorderController {
     private objects: WorldBorder[] = [

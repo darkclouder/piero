@@ -1,13 +1,13 @@
-import type { Board } from "@canvas/board/Board";
-import { mousePositionToElement } from "@canvas/primitives/dom";
-import type { Subscription } from "@canvas/primitives/events";
+import type { Board } from "canvas/board/Board";
+import { mousePositionToElement } from "canvas/primitives/dom";
+import type { Subscription } from "canvas/primitives/events";
 import {
     createDomEventListener,
     EventBase,
     EventHandler,
     unsubscribeAll,
-} from "@canvas/primitives/events";
-import type { Vector2 } from "@canvas/primitives/space";
+} from "canvas/primitives/events";
+import type { Vector2 } from "canvas/primitives/space";
 
 interface GestureEvent extends UIEvent {
     scale: number;

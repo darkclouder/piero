@@ -1,12 +1,12 @@
-import type { ResizeObjectEvent } from "@canvas/board/controllers/objects/ResizeObjectController";
-import { worldSpaceResize } from "@canvas/board/controllers/objects/ResizeObjectController";
-import { AnchorPoint } from "@canvas/board/objects/foundation/PositionAnchor";
-import { BoardItem } from "@canvas/board/objects/items/BoardItem";
-import { BoundingBox, Vector2 } from "@canvas/primitives/space";
-import type { Optional } from "@canvas/primitives/types";
-import type { RenderContext } from "@canvas/render/RenderContext";
-import { Binding } from "@config/bindings";
-import { imageMissingColor } from "@config/draw";
+import type { ResizeObjectEvent } from "canvas/board/controllers/objects/ResizeObjectController";
+import { worldSpaceResize } from "canvas/board/controllers/objects/ResizeObjectController";
+import { AnchorPoint } from "canvas/board/objects/foundation/PositionAnchor";
+import { BoardItem } from "canvas/board/objects/items/BoardItem";
+import { BoundingBox, Vector2 } from "canvas/primitives/space";
+import type { Optional } from "canvas/primitives/types";
+import type { RenderContext } from "canvas/render/RenderContext";
+import { Binding } from "config/bindings";
+import { imageMissingColor } from "config/draw";
 
 interface ImageVariantDefinition {
     width: number;

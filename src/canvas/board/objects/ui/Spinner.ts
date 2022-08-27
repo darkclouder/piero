@@ -1,9 +1,9 @@
-import { GeometricObject } from "@canvas/board/objects/GeometricObject";
-import type { Vector2 } from "@canvas/primitives/space";
-import { BoundingBox } from "@canvas/primitives/space";
-import type { RenderContext } from "@canvas/render/RenderContext";
-import type { Viewport } from "@canvas/render/Viewport";
-import { defaultStrokeColor } from "@config/draw";
+import { GeometricObject } from "canvas/board/objects/GeometricObject";
+import type { Vector2 } from "canvas/primitives/space";
+import { BoundingBox } from "canvas/primitives/space";
+import type { RenderContext } from "canvas/render/RenderContext";
+import type { Viewport } from "canvas/render/Viewport";
+import { defaultStrokeColor } from "config/draw";
 
 const radian = Math.PI * 2.0;
 

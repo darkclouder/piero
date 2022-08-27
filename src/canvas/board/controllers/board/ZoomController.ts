@@ -1,15 +1,15 @@
-import type { Board } from "@canvas/board/Board";
-import { canZoom } from "@canvas/board/controllers/BoardMode";
-import { mousePositionToElement } from "@canvas/primitives/dom";
-import type { Subscription } from "@canvas/primitives/events";
+import type { Board } from "canvas/board/Board";
+import { canZoom } from "canvas/board/controllers/BoardMode";
+import { mousePositionToElement } from "canvas/primitives/dom";
+import type { Subscription } from "canvas/primitives/events";
 import {
     createDomEventListener,
     unsubscribeAll,
-} from "@canvas/primitives/events";
-import type { Vector2 } from "@canvas/primitives/space";
-import type { Optional } from "@canvas/primitives/types";
-import type { Viewport } from "@canvas/render/Viewport";
-import { Binding } from "@config/bindings";
+} from "canvas/primitives/events";
+import type { Vector2 } from "canvas/primitives/space";
+import type { Optional } from "canvas/primitives/types";
+import type { Viewport } from "canvas/render/Viewport";
+import { Binding } from "config/bindings";
 
 import type { PinchZoomEvent } from "./PinchZoomController";
 import { PinchZoomController } from "./PinchZoomController";

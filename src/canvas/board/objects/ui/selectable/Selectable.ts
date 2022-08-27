@@ -1,12 +1,12 @@
-import type { Board } from "@canvas/board/Board";
-import { Group } from "@canvas/board/objects/foundation/Group";
-import { RotateContainer } from "@canvas/board/objects/foundation/RotateContainer";
-import type { GeometricObject } from "@canvas/board/objects/GeometricObject";
-import type { BoardItem } from "@canvas/board/objects/items/BoardItem";
-import { allPositionings } from "@canvas/board/objects/ui/selectable/ResizeFrame";
-import type { ResizeHandlePositioning } from "@canvas/board/objects/ui/selectable/ResizeHandle";
-import { SelectionOverlay } from "@canvas/board/objects/ui/selectable/SelectionOverlay";
-import type { Optional } from "@canvas/primitives/types";
+import type { Board } from "canvas/board/Board";
+import { Group } from "canvas/board/objects/foundation/Group";
+import { RotateContainer } from "canvas/board/objects/foundation/RotateContainer";
+import type { GeometricObject } from "canvas/board/objects/GeometricObject";
+import type { BoardItem } from "canvas/board/objects/items/BoardItem";
+import { allPositionings } from "canvas/board/objects/ui/selectable/ResizeFrame";
+import type { ResizeHandlePositioning } from "canvas/board/objects/ui/selectable/ResizeHandle";
+import { SelectionOverlay } from "canvas/board/objects/ui/selectable/SelectionOverlay";
+import type { Optional } from "canvas/primitives/types";
 
 export class SelectionOptions {
     constructor(

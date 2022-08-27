@@ -2,7 +2,7 @@ import {
     BoundingBox,
     doBoundingBoxesOverlap,
     Vector2,
-} from "@canvas/primitives/space";
+} from "canvas/primitives/space";
 import { expect } from "chai";
 
 describe("doBoundingBoxesOverlap", () => {

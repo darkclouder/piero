@@ -1,9 +1,9 @@
-import type { Board } from "@canvas/board/Board";
-import { GeometricObject } from "@canvas/board/objects/GeometricObject";
-import type { BoardItem } from "@canvas/board/objects/items/BoardItem";
-import { ResizeHandlePositioning } from "@canvas/board/objects/ui/selectable/ResizeHandle";
-import { BoundingBox, Vector2 } from "@canvas/primitives/space";
-import type { Viewport } from "@canvas/render/Viewport";
+import type { Board } from "canvas/board/Board";
+import { GeometricObject } from "canvas/board/objects/GeometricObject";
+import type { BoardItem } from "canvas/board/objects/items/BoardItem";
+import { ResizeHandlePositioning } from "canvas/board/objects/ui/selectable/ResizeHandle";
+import { BoundingBox, Vector2 } from "canvas/primitives/space";
+import type { Viewport } from "canvas/render/Viewport";
 
 export class RotateCollider extends GeometricObject {
     constructor(

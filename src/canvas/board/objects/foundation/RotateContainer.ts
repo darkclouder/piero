@@ -1,12 +1,12 @@
-import type { Board } from "@canvas/board/Board";
-import { GeometricObject } from "@canvas/board/objects/GeometricObject";
-import type { BoardPositionable } from "@canvas/board/objects/items/BoardItem";
-import { BoundingBox, Vector2 } from "@canvas/primitives/space";
-import type { Optional } from "@canvas/primitives/types";
-import { tintBoundingBox } from "@canvas/render/CanvasLayer";
-import type { RenderContext } from "@canvas/render/RenderContext";
-import type { Viewport } from "@canvas/render/Viewport";
-import { DebugConfig } from "@config/debug";
+import type { Board } from "canvas/board/Board";
+import { GeometricObject } from "canvas/board/objects/GeometricObject";
+import type { BoardPositionable } from "canvas/board/objects/items/BoardItem";
+import { BoundingBox, Vector2 } from "canvas/primitives/space";
+import type { Optional } from "canvas/primitives/types";
+import { tintBoundingBox } from "canvas/render/CanvasLayer";
+import type { RenderContext } from "canvas/render/RenderContext";
+import type { Viewport } from "canvas/render/Viewport";
+import { DebugConfig } from "config/debug";
 
 export class RotateContainer<
     T extends GeometricObject

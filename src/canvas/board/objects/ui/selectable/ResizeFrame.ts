@@ -1,5 +1,5 @@
-import { Group } from "@canvas/board/objects/foundation/Group";
-import type { SelectionOverlay } from "@canvas/board/objects/ui/selectable/SelectionOverlay";
+import { Group } from "canvas/board/objects/foundation/Group";
+import type { SelectionOverlay } from "canvas/board/objects/ui/selectable/SelectionOverlay";
 
 import {
     ResizeHandle,

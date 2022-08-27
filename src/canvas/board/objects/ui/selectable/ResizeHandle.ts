@@ -1,15 +1,15 @@
-import type { Board } from "@canvas/board/Board";
-import { canResize } from "@canvas/board/controllers/BoardMode";
-import { GeometricObject } from "@canvas/board/objects/GeometricObject";
-import type { ResizeFrame } from "@canvas/board/objects/ui/selectable/ResizeFrame";
-import { resetCursor, setCursor } from "@canvas/primitives/dom";
-import type { Subscription } from "@canvas/primitives/events";
-import { unsubscribeAll } from "@canvas/primitives/events";
-import { BoundingBox, Vector2 } from "@canvas/primitives/space";
-import type { Optional } from "@canvas/primitives/types";
-import type { RenderContext } from "@canvas/render/RenderContext";
-import type { Viewport } from "@canvas/render/Viewport";
-import { inverseStrokeColor } from "@config/draw";
+import type { Board } from "canvas/board/Board";
+import { canResize } from "canvas/board/controllers/BoardMode";
+import { GeometricObject } from "canvas/board/objects/GeometricObject";
+import type { ResizeFrame } from "canvas/board/objects/ui/selectable/ResizeFrame";
+import { resetCursor, setCursor } from "canvas/primitives/dom";
+import type { Subscription } from "canvas/primitives/events";
+import { unsubscribeAll } from "canvas/primitives/events";
+import { BoundingBox, Vector2 } from "canvas/primitives/space";
+import type { Optional } from "canvas/primitives/types";
+import type { RenderContext } from "canvas/render/RenderContext";
+import type { Viewport } from "canvas/render/Viewport";
+import { inverseStrokeColor } from "config/draw";
 
 export enum ResizeHandlePositioning {
     TopLeft,

@@ -1,10 +1,10 @@
-import { BoardController } from "@canvas/board/controllers/BoardController";
-import type { GeometricObject } from "@canvas/board/objects/GeometricObject";
-import { EventBase, EventHandler } from "@canvas/primitives/events";
-import { Vector2 } from "@canvas/primitives/space";
-import { LayeredRenderer } from "@canvas/render/LayeredRenderer";
-import type { Viewport, ViewportHolder } from "@canvas/render/Viewport";
-import { TopLeftClippedViewport } from "@canvas/render/Viewport";
+import { BoardController } from "canvas/board/controllers/BoardController";
+import type { GeometricObject } from "canvas/board/objects/GeometricObject";
+import { EventBase, EventHandler } from "canvas/primitives/events";
+import { Vector2 } from "canvas/primitives/space";
+import { LayeredRenderer } from "canvas/render/LayeredRenderer";
+import type { Viewport, ViewportHolder } from "canvas/render/Viewport";
+import { TopLeftClippedViewport } from "canvas/render/Viewport";
 
 export class ChangeViewportEvent extends EventBase<Board> {
     constructor(

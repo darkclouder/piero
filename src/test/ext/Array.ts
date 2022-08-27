@@ -1,4 +1,4 @@
-import "@ext/Array";
+import "ext/Array";
 
 import { expect } from "chai";
 

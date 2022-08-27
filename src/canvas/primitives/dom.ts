@@ -1,4 +1,4 @@
-import { Vector2 } from "@canvas/primitives/space";
+import { Vector2 } from "canvas/primitives/space";
 
 export function mousePositionToElement(
     e: { clientX: number; clientY: number },

@@ -1,5 +1,5 @@
-import type { RenderObject } from "@canvas/render/RenderObject";
-import { ZBuffer } from "@canvas/render/ZBuffer";
+import type { RenderObject } from "canvas/render/RenderObject";
+import { ZBuffer } from "canvas/render/ZBuffer";
 
 import { CanvasLayer } from "./CanvasLayer";
 import type { ViewportHolder } from "./Viewport";

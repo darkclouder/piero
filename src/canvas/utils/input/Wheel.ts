@@ -1,4 +1,4 @@
-import { lineWheelBoost, pageWheelBoost } from "@config/interaction";
+import { lineWheelBoost, pageWheelBoost } from "config/interaction";
 
 export function getWheelBoost(e: WheelEvent): number {
     switch (e.deltaMode) {

@@ -1,24 +1,24 @@
-import type { Board } from "@canvas/board/Board";
-import { BoardMode, canResize } from "@canvas/board/controllers/BoardMode";
+import type { Board } from "canvas/board/Board";
+import { BoardMode, canResize } from "canvas/board/controllers/BoardMode";
 import type {
     MouseDownEvent,
     MouseMoveEvent,
-} from "@canvas/board/controllers/objects/MouseInteractionController";
-import { AnchorPoint } from "@canvas/board/objects/foundation/PositionAnchor";
-import type { GeometricObject } from "@canvas/board/objects/GeometricObject";
-import type { ResizeHandle } from "@canvas/board/objects/ui/selectable/ResizeHandle";
-import { ResizeHandlePositioning } from "@canvas/board/objects/ui/selectable/ResizeHandle";
-import { resetCursor } from "@canvas/primitives/dom";
-import type { Subscription } from "@canvas/primitives/events";
+} from "canvas/board/controllers/objects/MouseInteractionController";
+import { AnchorPoint } from "canvas/board/objects/foundation/PositionAnchor";
+import type { GeometricObject } from "canvas/board/objects/GeometricObject";
+import type { ResizeHandle } from "canvas/board/objects/ui/selectable/ResizeHandle";
+import { ResizeHandlePositioning } from "canvas/board/objects/ui/selectable/ResizeHandle";
+import { resetCursor } from "canvas/primitives/dom";
+import type { Subscription } from "canvas/primitives/events";
 import {
     EventBase,
     EventHandler,
     unsubscribeAll,
-} from "@canvas/primitives/events";
-import type { BoundingBox } from "@canvas/primitives/space";
-import { Vector2 } from "@canvas/primitives/space";
-import type { Optional } from "@canvas/primitives/types";
-import type { ModifierState } from "@canvas/utils/input/ModifierState";
+} from "canvas/primitives/events";
+import type { BoundingBox } from "canvas/primitives/space";
+import { Vector2 } from "canvas/primitives/space";
+import type { Optional } from "canvas/primitives/types";
+import type { ModifierState } from "canvas/utils/input/ModifierState";
 
 export class ResizeObjectEvent extends EventBase<GeometricObject> {
     constructor(

@@ -1,4 +1,4 @@
-import { ZBuffer } from "@canvas/render/ZBuffer";
+import { ZBuffer } from "canvas/render/ZBuffer";
 import { expect } from "chai";
 
 describe("ZBuffer", () => {

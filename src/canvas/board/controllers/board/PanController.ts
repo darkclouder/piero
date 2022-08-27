@@ -1,14 +1,14 @@
-import type { Board } from "@canvas/board/Board";
-import { canPan } from "@canvas/board/controllers/BoardMode";
-import type { Subscription } from "@canvas/primitives/events";
+import type { Board } from "canvas/board/Board";
+import { canPan } from "canvas/board/controllers/BoardMode";
+import type { Subscription } from "canvas/primitives/events";
 import {
     createDomEventListener,
     unsubscribeAll,
-} from "@canvas/primitives/events";
-import { Vector2 } from "@canvas/primitives/space";
-import { ModifierState } from "@canvas/utils/input/ModifierState";
-import { getWheelBoost } from "@canvas/utils/input/Wheel";
-import { Binding } from "@config/bindings";
+} from "canvas/primitives/events";
+import { Vector2 } from "canvas/primitives/space";
+import { ModifierState } from "canvas/utils/input/ModifierState";
+import { getWheelBoost } from "canvas/utils/input/Wheel";
+import { Binding } from "config/bindings";
 
 export class PanController {
     private subscriptions: Subscription[] = [];

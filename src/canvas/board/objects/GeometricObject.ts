@@ -1,12 +1,12 @@
-import type { Board } from "@canvas/board/Board";
-import type { Subscription } from "@canvas/primitives/events";
-import { unsubscribeAll } from "@canvas/primitives/events";
-import type { BoundingBox, Vector2 } from "@canvas/primitives/space";
-import { rayInBoundingBox } from "@canvas/primitives/space";
-import type { Optional } from "@canvas/primitives/types";
-import type { RenderContext } from "@canvas/render/RenderContext";
-import type { RenderObject } from "@canvas/render/RenderObject";
-import type { Viewport } from "@canvas/render/Viewport";
+import type { Board } from "canvas/board/Board";
+import type { Subscription } from "canvas/primitives/events";
+import { unsubscribeAll } from "canvas/primitives/events";
+import type { BoundingBox, Vector2 } from "canvas/primitives/space";
+import { rayInBoundingBox } from "canvas/primitives/space";
+import type { Optional } from "canvas/primitives/types";
+import type { RenderContext } from "canvas/render/RenderContext";
+import type { RenderObject } from "canvas/render/RenderObject";
+import type { Viewport } from "canvas/render/Viewport";
 
 export interface BoundingBoxHolder {
     boundingBox(viewport: Viewport): BoundingBox;

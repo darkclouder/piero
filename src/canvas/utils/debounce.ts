@@ -1,4 +1,4 @@
-import type { Optional } from "@canvas/primitives/types";
+import type { Optional } from "canvas/primitives/types";
 
 type Func = (...args: unknown[]) => unknown;
 type Timeout = ReturnType<typeof setTimeout>;

@@ -1,21 +1,21 @@
-import type { Board } from "@canvas/board/Board";
-import { BoardMode, canRotate } from "@canvas/board/controllers/BoardMode";
+import type { Board } from "canvas/board/Board";
+import { BoardMode, canRotate } from "canvas/board/controllers/BoardMode";
 import type {
     MouseDownEvent,
     MouseMoveEvent,
-} from "@canvas/board/controllers/objects/MouseInteractionController";
-import type { GeometricObject } from "@canvas/board/objects/GeometricObject";
-import type { BoardItem } from "@canvas/board/objects/items/BoardItem";
-import { resetCursor, setCursor } from "@canvas/primitives/dom";
-import type { Subscription } from "@canvas/primitives/events";
+} from "canvas/board/controllers/objects/MouseInteractionController";
+import type { GeometricObject } from "canvas/board/objects/GeometricObject";
+import type { BoardItem } from "canvas/board/objects/items/BoardItem";
+import { resetCursor, setCursor } from "canvas/primitives/dom";
+import type { Subscription } from "canvas/primitives/events";
 import {
     EventBase,
     EventHandler,
     unsubscribeAll,
-} from "@canvas/primitives/events";
-import type { Vector2 } from "@canvas/primitives/space";
-import { Binding } from "@config/bindings";
-import { rotateStepSize } from "@config/interaction";
+} from "canvas/primitives/events";
+import type { Vector2 } from "canvas/primitives/space";
+import { Binding } from "config/bindings";
+import { rotateStepSize } from "config/interaction";
 
 export class RotateObjectEvent extends EventBase<GeometricObject> {
     constructor(readonly radians: number, eventStack?: GeometricObject[]) {

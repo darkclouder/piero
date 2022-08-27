@@ -1,15 +1,15 @@
-import type { Font } from "@canvas/board/controllers/board/FontController";
-import type { ResizeObjectEvent } from "@canvas/board/controllers/objects/ResizeObjectController";
-import { worldSpaceResize } from "@canvas/board/controllers/objects/ResizeObjectController";
-import { AnchorPoint } from "@canvas/board/objects/foundation/PositionAnchor";
+import type { Font } from "canvas/board/controllers/board/FontController";
+import type { ResizeObjectEvent } from "canvas/board/controllers/objects/ResizeObjectController";
+import { worldSpaceResize } from "canvas/board/controllers/objects/ResizeObjectController";
+import { AnchorPoint } from "canvas/board/objects/foundation/PositionAnchor";
 import {
     MEASURE_FONT_SIZE,
     TextItem,
-} from "@canvas/board/objects/items/TextItem";
-import { ResizeHandlePositioning } from "@canvas/board/objects/ui/selectable/ResizeHandle";
-import { SelectionOptions } from "@canvas/board/objects/ui/selectable/Selectable";
-import { BoundingBox, Vector2 } from "@canvas/primitives/space";
-import type { RenderContext } from "@canvas/render/RenderContext";
+} from "canvas/board/objects/items/TextItem";
+import { ResizeHandlePositioning } from "canvas/board/objects/ui/selectable/ResizeHandle";
+import { SelectionOptions } from "canvas/board/objects/ui/selectable/Selectable";
+import { BoundingBox, Vector2 } from "canvas/primitives/space";
+import type { RenderContext } from "canvas/render/RenderContext";
 
 export class BlockText extends TextItem {
     readonly isBlockText = true;

@@ -1,7 +1,7 @@
-import type { Guide } from "@canvas/board/controllers/objects/GuidelineController";
-import { GeometricObject } from "@canvas/board/objects/GeometricObject";
-import { BoundingBox, Vector2 } from "@canvas/primitives/space";
-import type { RenderContext } from "@canvas/render/RenderContext";
+import type { Guide } from "canvas/board/controllers/objects/GuidelineController";
+import { GeometricObject } from "canvas/board/objects/GeometricObject";
+import { BoundingBox, Vector2 } from "canvas/primitives/space";
+import type { RenderContext } from "canvas/render/RenderContext";
 
 export class Guideline extends GeometricObject {
     readonly isGuideline = true;

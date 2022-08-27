@@ -1,20 +1,20 @@
-import type { Board, SpawnEvent } from "@canvas/board/Board";
-import { findSelectables } from "@canvas/board/controllers/objects/SelectBoxController";
-import { rotateBoundingBox } from "@canvas/board/objects/foundation/RotateContainer";
-import type { BoardItem } from "@canvas/board/objects/items/BoardItem";
-import { Guideline } from "@canvas/board/objects/ui/Guideline";
-import type { Subscription } from "@canvas/primitives/events";
-import { unsubscribeAll } from "@canvas/primitives/events";
-import type { Vector2 } from "@canvas/primitives/space";
-import type { Optional } from "@canvas/primitives/types";
-import { Viewport } from "@canvas/render/Viewport";
-import { debounce } from "@canvas/utils/debounce";
-import { DebugConfig } from "@config/debug";
+import type { Board, SpawnEvent } from "canvas/board/Board";
+import { findSelectables } from "canvas/board/controllers/objects/SelectBoxController";
+import { rotateBoundingBox } from "canvas/board/objects/foundation/RotateContainer";
+import type { BoardItem } from "canvas/board/objects/items/BoardItem";
+import { Guideline } from "canvas/board/objects/ui/Guideline";
+import type { Subscription } from "canvas/primitives/events";
+import { unsubscribeAll } from "canvas/primitives/events";
+import type { Vector2 } from "canvas/primitives/space";
+import type { Optional } from "canvas/primitives/types";
+import { Viewport } from "canvas/render/Viewport";
+import { debounce } from "canvas/utils/debounce";
+import { DebugConfig } from "config/debug";
 import {
     activateCenterGuides,
     showGuidelineDistance,
     standardMinGuideDistance,
-} from "@config/interaction";
+} from "config/interaction";
 
 enum GuideOrigin {
     // Higher number = higher priority (TopLeft > BottomRight > Center)

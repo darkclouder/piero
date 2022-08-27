@@ -1,28 +1,28 @@
-import "@ext/Set";
+import "ext/Set";
 
-import type { Board } from "@canvas/board/Board";
-import { BoardMode } from "@canvas/board/controllers/BoardMode";
+import type { Board } from "canvas/board/Board";
+import { BoardMode } from "canvas/board/controllers/BoardMode";
 import type {
     DeselectObjectEvent,
     SelectObjectEvent,
-} from "@canvas/board/controllers/objects/SelectObjectController";
-import type { Group } from "@canvas/board/objects/foundation/Group";
-import type { GeometricObject } from "@canvas/board/objects/GeometricObject";
-import type { BoardItem } from "@canvas/board/objects/items/BoardItem";
+} from "canvas/board/controllers/objects/SelectObjectController";
+import type { Group } from "canvas/board/objects/foundation/Group";
+import type { GeometricObject } from "canvas/board/objects/GeometricObject";
+import type { BoardItem } from "canvas/board/objects/items/BoardItem";
 import type {
     Selectable,
     SelectionOptions,
-} from "@canvas/board/objects/ui/selectable/Selectable";
-import { SelectBoxFrame } from "@canvas/board/objects/ui/SelectBoxFrame";
-import type { Subscription } from "@canvas/primitives/events";
-import { EventHandler, unsubscribeAll } from "@canvas/primitives/events";
+} from "canvas/board/objects/ui/selectable/Selectable";
+import { SelectBoxFrame } from "canvas/board/objects/ui/SelectBoxFrame";
+import type { Subscription } from "canvas/primitives/events";
+import { EventHandler, unsubscribeAll } from "canvas/primitives/events";
 import {
     BoundingBox,
     doBoundingBoxesOverlap,
     Vector2,
-} from "@canvas/primitives/space";
-import { Binding } from "@config/bindings";
-import type { ImmutableSetView } from "@ext/Set";
+} from "canvas/primitives/space";
+import { Binding } from "config/bindings";
+import type { ImmutableSetView } from "ext/Set";
 
 import type {
     MouseDownEvent,

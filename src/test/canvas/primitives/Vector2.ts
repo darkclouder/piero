@@ -1,4 +1,4 @@
-import { Vector2 } from "@canvas/primitives/space";
+import { Vector2 } from "canvas/primitives/space";
 import { expect } from "chai";
 
 describe("Vector2", () => {

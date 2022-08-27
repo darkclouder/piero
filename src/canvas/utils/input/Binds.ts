@@ -1,7 +1,7 @@
-import type { MousePressEventBase } from "@canvas/board/controllers/objects/MouseInteractionController";
-import type { Optional } from "@canvas/primitives/types";
-import { ModifierState } from "@canvas/utils/input/ModifierState";
-import type { MouseButton } from "@canvas/utils/input/MouseButton";
+import type { MousePressEventBase } from "canvas/board/controllers/objects/MouseInteractionController";
+import type { Optional } from "canvas/primitives/types";
+import { ModifierState } from "canvas/utils/input/ModifierState";
+import type { MouseButton } from "canvas/utils/input/MouseButton";
 
 export class Bind {
     readonly modifier: ModifierState;

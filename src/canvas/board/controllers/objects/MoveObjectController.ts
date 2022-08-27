@@ -1,28 +1,28 @@
-import type { Board } from "@canvas/board/Board";
-import { BoardMode, canMove } from "@canvas/board/controllers/BoardMode";
+import type { Board } from "canvas/board/Board";
+import { BoardMode, canMove } from "canvas/board/controllers/BoardMode";
 import type {
     MouseDownEvent,
     MouseMoveEvent,
     MouseUpEvent,
-} from "@canvas/board/controllers/objects/MouseInteractionController";
-import { containingBoundingBox } from "@canvas/board/objects/foundation/Group";
-import { rotateBoundingBox } from "@canvas/board/objects/foundation/RotateContainer";
-import type { GeometricObject } from "@canvas/board/objects/GeometricObject";
-import { getTopSelectableOnEventStack } from "@canvas/board/objects/ui/selectable/Selectable";
-import { resetCursor, setCursor } from "@canvas/primitives/dom";
-import type { Subscription } from "@canvas/primitives/events";
+} from "canvas/board/controllers/objects/MouseInteractionController";
+import { containingBoundingBox } from "canvas/board/objects/foundation/Group";
+import { rotateBoundingBox } from "canvas/board/objects/foundation/RotateContainer";
+import type { GeometricObject } from "canvas/board/objects/GeometricObject";
+import { getTopSelectableOnEventStack } from "canvas/board/objects/ui/selectable/Selectable";
+import { resetCursor, setCursor } from "canvas/primitives/dom";
+import type { Subscription } from "canvas/primitives/events";
 import {
     EventBase,
     EventHandler,
     unsubscribeAll,
-} from "@canvas/primitives/events";
-import type { BoundingBox } from "@canvas/primitives/space";
-import { Vector2 } from "@canvas/primitives/space";
-import type { Optional } from "@canvas/primitives/types";
-import { Viewport } from "@canvas/render/Viewport";
-import { Binding } from "@config/bindings";
-import { canMoveCursor, moveCursor } from "@config/draw";
-import { moveThreshold } from "@config/interaction";
+} from "canvas/primitives/events";
+import type { BoundingBox } from "canvas/primitives/space";
+import { Vector2 } from "canvas/primitives/space";
+import type { Optional } from "canvas/primitives/types";
+import { Viewport } from "canvas/render/Viewport";
+import { Binding } from "config/bindings";
+import { canMoveCursor, moveCursor } from "config/draw";
+import { moveThreshold } from "config/interaction";
 
 export class MoveObjectEvent extends EventBase<GeometricObject> {
     constructor(

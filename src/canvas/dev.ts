@@ -1,16 +1,16 @@
-import { Font } from "@canvas/board/controllers/board/FontController";
-import type { GeometricObject } from "@canvas/board/objects/GeometricObject";
-import { BlockText } from "@canvas/board/objects/items/BlockText";
-import { ImageItem, ImageSet } from "@canvas/board/objects/items/ImageItem";
-import { Rectangle } from "@canvas/board/objects/items/Rectangle";
-import { StyledText } from "@canvas/board/objects/items/StyledText";
+import { Font } from "canvas/board/controllers/board/FontController";
+import type { GeometricObject } from "canvas/board/objects/GeometricObject";
+import { BlockText } from "canvas/board/objects/items/BlockText";
+import { ImageItem, ImageSet } from "canvas/board/objects/items/ImageItem";
+import { Rectangle } from "canvas/board/objects/items/Rectangle";
+import { StyledText } from "canvas/board/objects/items/StyledText";
 import {
     Selectable,
     SelectionOptions,
-} from "@canvas/board/objects/ui/selectable/Selectable";
-import { EventHandler as RealEventHandler } from "@canvas/primitives/events";
-import { Vector2 } from "@canvas/primitives/space";
-import { defaultBackgroundColor, defaultFrameColor } from "@config/draw";
+} from "canvas/board/objects/ui/selectable/Selectable";
+import { EventHandler as RealEventHandler } from "canvas/primitives/events";
+import { Vector2 } from "canvas/primitives/space";
+import { defaultBackgroundColor, defaultFrameColor } from "config/draw";
 
 import type { Board } from "./board/Board";
 import { StickyNote } from "./board/objects/items/StickyNote";

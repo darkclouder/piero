@@ -1,15 +1,15 @@
-import type { Font } from "@canvas/board/controllers/board/FontController";
-import type { ResizeObjectEvent } from "@canvas/board/controllers/objects/ResizeObjectController";
-import { worldSpaceResize } from "@canvas/board/controllers/objects/ResizeObjectController";
-import { AnchorPoint } from "@canvas/board/objects/foundation/PositionAnchor";
+import type { Font } from "canvas/board/controllers/board/FontController";
+import type { ResizeObjectEvent } from "canvas/board/controllers/objects/ResizeObjectController";
+import { worldSpaceResize } from "canvas/board/controllers/objects/ResizeObjectController";
+import { AnchorPoint } from "canvas/board/objects/foundation/PositionAnchor";
 import {
     MEASURE_FONT_SIZE,
     TextItem,
-} from "@canvas/board/objects/items/TextItem";
-import { BoundingBox, Vector2 } from "@canvas/primitives/space";
-import type { Optional } from "@canvas/primitives/types";
-import type { RenderContext } from "@canvas/render/RenderContext";
-import { maxFontSize, minFontSize } from "@config/draw";
+} from "canvas/board/objects/items/TextItem";
+import { BoundingBox, Vector2 } from "canvas/primitives/space";
+import type { Optional } from "canvas/primitives/types";
+import type { RenderContext } from "canvas/render/RenderContext";
+import { maxFontSize, minFontSize } from "config/draw";
 
 export class StyledText extends TextItem {
     readonly isStyledText = true;

@@ -1,4 +1,4 @@
-import "@ext/Set";
+import "ext/Set";
 
 import { expect } from "chai";
 

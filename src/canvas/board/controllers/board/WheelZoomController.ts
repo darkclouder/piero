@@ -1,16 +1,16 @@
-import type { Board } from "@canvas/board/Board";
-import { mousePositionToElement } from "@canvas/primitives/dom";
-import type { Subscription } from "@canvas/primitives/events";
+import type { Board } from "canvas/board/Board";
+import { mousePositionToElement } from "canvas/primitives/dom";
+import type { Subscription } from "canvas/primitives/events";
 import {
     createDomEventListener,
     EventBase,
     EventHandler,
     unsubscribeAll,
-} from "@canvas/primitives/events";
-import type { Vector2 } from "@canvas/primitives/space";
-import { ModifierState } from "@canvas/utils/input/ModifierState";
-import { getWheelBoost } from "@canvas/utils/input/Wheel";
-import { Binding } from "@config/bindings";
+} from "canvas/primitives/events";
+import type { Vector2 } from "canvas/primitives/space";
+import { ModifierState } from "canvas/utils/input/ModifierState";
+import { getWheelBoost } from "canvas/utils/input/Wheel";
+import { Binding } from "config/bindings";
 
 export class WheelZoomEvent extends EventBase<Board> {
     constructor(

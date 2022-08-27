@@ -1,22 +1,22 @@
-import type { Board } from "@canvas/board/Board";
+import type { Board } from "canvas/board/Board";
 import {
     BoardMode,
     canManipulate,
     canMove,
     canSelect,
-} from "@canvas/board/controllers/BoardMode";
-import { showCanMoveCursor } from "@canvas/board/controllers/objects/MoveObjectController";
-import type { GeometricObject } from "@canvas/board/objects//GeometricObject";
-import { Group } from "@canvas/board/objects/foundation/Group";
-import { ResizeFrame } from "@canvas/board/objects/ui/selectable/ResizeFrame";
-import { RotateFrame } from "@canvas/board/objects/ui/selectable/RotateFrame";
+} from "canvas/board/controllers/BoardMode";
+import { showCanMoveCursor } from "canvas/board/controllers/objects/MoveObjectController";
+import type { GeometricObject } from "canvas/board/objects//GeometricObject";
+import { Group } from "canvas/board/objects/foundation/Group";
+import { ResizeFrame } from "canvas/board/objects/ui/selectable/ResizeFrame";
+import { RotateFrame } from "canvas/board/objects/ui/selectable/RotateFrame";
 import type {
     Selectable,
     SelectionOptions,
-} from "@canvas/board/objects/ui/selectable/Selectable";
-import { SelectionFrame } from "@canvas/board/objects/ui/selectable/SelectionFrame";
-import { resetCursor } from "@canvas/primitives/dom";
-import type { Optional } from "@canvas/primitives/types";
+} from "canvas/board/objects/ui/selectable/Selectable";
+import { SelectionFrame } from "canvas/board/objects/ui/selectable/SelectionFrame";
+import { resetCursor } from "canvas/primitives/dom";
+import type { Optional } from "canvas/primitives/types";
 
 export class SelectionOverlay extends Group {
     readonly selectionFrame: SelectionFrame;

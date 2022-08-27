@@ -1,4 +1,4 @@
-import { Vector2 } from "@canvas/primitives/space";
+import { Vector2 } from "canvas/primitives/space";
 
 export class Viewport {
     static readonly world = new Viewport(Vector2.origin, 1.0, Vector2.origin);

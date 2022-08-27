@@ -1,14 +1,14 @@
-import type { Board } from "@canvas/board/Board";
-import { FontController } from "@canvas/board/controllers/board/FontController";
-import { WorldBorderController } from "@canvas/board/controllers/board/WorldBorderController";
-import { BoardMode } from "@canvas/board/controllers/BoardMode";
-import { GuidelineController } from "@canvas/board/controllers/objects/GuidelineController";
-import { MoveObjectController } from "@canvas/board/controllers/objects/MoveObjectController";
-import { ResizeObjectController } from "@canvas/board/controllers/objects/ResizeObjectController";
-import { RotateObjectController } from "@canvas/board/controllers/objects/RotateObjectController";
-import { SelectBoxController } from "@canvas/board/controllers/objects/SelectBoxController";
-import { LayerMarker } from "@canvas/board/objects/foundation/LayerMarker";
-import { StateMachine } from "@canvas/primitives/StateMachine";
+import type { Board } from "canvas/board/Board";
+import { FontController } from "canvas/board/controllers/board/FontController";
+import { WorldBorderController } from "canvas/board/controllers/board/WorldBorderController";
+import { BoardMode } from "canvas/board/controllers/BoardMode";
+import { GuidelineController } from "canvas/board/controllers/objects/GuidelineController";
+import { MoveObjectController } from "canvas/board/controllers/objects/MoveObjectController";
+import { ResizeObjectController } from "canvas/board/controllers/objects/ResizeObjectController";
+import { RotateObjectController } from "canvas/board/controllers/objects/RotateObjectController";
+import { SelectBoxController } from "canvas/board/controllers/objects/SelectBoxController";
+import { LayerMarker } from "canvas/board/objects/foundation/LayerMarker";
+import { StateMachine } from "canvas/primitives/StateMachine";
 
 import { BoardResizeController } from "./board/BoardResizeController";
 import { PanController } from "./board/PanController";

@@ -1,6 +1,6 @@
-import "@ext/Array";
+import "ext/Array";
 
-import type { Optional } from "@canvas/primitives/types";
+import type { Optional } from "canvas/primitives/types";
 
 export class ZBuffer<T> {
     private buffer: T[] = [];

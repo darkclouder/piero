@@ -1,6 +1,6 @@
-import type { BoundingBoxHolder } from "@canvas/board/objects/GeometricObject";
-import { Vector2 } from "@canvas/primitives/space";
-import type { Viewport } from "@canvas/render/Viewport";
+import type { BoundingBoxHolder } from "canvas/board/objects/GeometricObject";
+import { Vector2 } from "canvas/primitives/space";
+import type { Viewport } from "canvas/render/Viewport";
 
 export interface PositionHolder {
     position(viewport: Viewport): Vector2;

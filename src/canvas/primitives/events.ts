@@ -1,4 +1,4 @@
-import { DebugConfig } from "@config/debug";
+import { DebugConfig } from "config/debug";
 
 import type { Constructor, Optional } from "./types";
 

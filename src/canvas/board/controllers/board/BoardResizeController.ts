@@ -1,5 +1,5 @@
-import type { Board } from "@canvas/board/Board";
-import { Vector2 } from "@canvas/primitives/space";
+import type { Board } from "canvas/board/Board";
+import { Vector2 } from "canvas/primitives/space";
 
 export class BoardResizeController {
     private eventListener: () => void;

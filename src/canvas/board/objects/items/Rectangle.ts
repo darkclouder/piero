@@ -1,7 +1,7 @@
-import { BoardItem } from "@canvas/board/objects/items/BoardItem";
-import type { Vector2 } from "@canvas/primitives/space";
-import type { RenderContext } from "@canvas/render/RenderContext";
-import { defaultFillColor } from "@config/draw";
+import { BoardItem } from "canvas/board/objects/items/BoardItem";
+import type { Vector2 } from "canvas/primitives/space";
+import type { RenderContext } from "canvas/render/RenderContext";
+import { defaultFillColor } from "config/draw";
 
 export class Rectangle extends BoardItem {
     constructor(

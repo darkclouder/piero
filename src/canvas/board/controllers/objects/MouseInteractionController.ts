@@ -1,18 +1,18 @@
-import type { Board } from "@canvas/board/Board";
-import type { GeometricObject } from "@canvas/board/objects/GeometricObject";
-import { mousePositionToElement } from "@canvas/primitives/dom";
-import type { Subscription } from "@canvas/primitives/events";
+import type { Board } from "canvas/board/Board";
+import type { GeometricObject } from "canvas/board/objects/GeometricObject";
+import { mousePositionToElement } from "canvas/primitives/dom";
+import type { Subscription } from "canvas/primitives/events";
 import {
     createDomEventListener,
     EventBase,
     EventHandler,
     getTargetOfEventStack,
     unsubscribeAll,
-} from "@canvas/primitives/events";
-import type { Vector2 } from "@canvas/primitives/space";
-import type { Optional } from "@canvas/primitives/types";
-import { ModifierState } from "@canvas/utils/input/ModifierState";
-import { MouseButton } from "@canvas/utils/input/MouseButton";
+} from "canvas/primitives/events";
+import type { Vector2 } from "canvas/primitives/space";
+import type { Optional } from "canvas/primitives/types";
+import { ModifierState } from "canvas/utils/input/ModifierState";
+import { MouseButton } from "canvas/utils/input/MouseButton";
 
 export class MouseEventBase extends EventBase<GeometricObject> {
     constructor(

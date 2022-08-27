@@ -1,6 +1,6 @@
-import { Bind, Binds } from "@canvas/utils/input/Binds";
-import { ModifierState } from "@canvas/utils/input/ModifierState";
-import { MouseButton } from "@canvas/utils/input/MouseButton";
+import { Bind, Binds } from "canvas/utils/input/Binds";
+import { ModifierState } from "canvas/utils/input/ModifierState";
+import { MouseButton } from "canvas/utils/input/MouseButton";
 
 export class Binding {
     public static readonly WheelPan = new Binds(

@@ -1,23 +1,23 @@
-import "@ext/Set";
+import "ext/Set";
 
-import type { Board } from "@canvas/board/Board";
-import { BoardMode, canSelect } from "@canvas/board/controllers/BoardMode";
-import type { GeometricObject } from "@canvas/board/objects/GeometricObject";
-import type { BoardItem } from "@canvas/board/objects/items/BoardItem";
+import type { Board } from "canvas/board/Board";
+import { BoardMode, canSelect } from "canvas/board/controllers/BoardMode";
+import type { GeometricObject } from "canvas/board/objects/GeometricObject";
+import type { BoardItem } from "canvas/board/objects/items/BoardItem";
 import type {
     Selectable,
     SelectionOptions,
-} from "@canvas/board/objects/ui/selectable/Selectable";
-import { getTopSelectableOnEventStack } from "@canvas/board/objects/ui/selectable/Selectable";
-import type { Subscription } from "@canvas/primitives/events";
+} from "canvas/board/objects/ui/selectable/Selectable";
+import { getTopSelectableOnEventStack } from "canvas/board/objects/ui/selectable/Selectable";
+import type { Subscription } from "canvas/primitives/events";
 import {
     EventBase,
     EventHandler,
     unsubscribeAll,
-} from "@canvas/primitives/events";
-import type { Optional } from "@canvas/primitives/types";
-import { Binding } from "@config/bindings";
-import type { ImmutableSetView } from "@ext/Set";
+} from "canvas/primitives/events";
+import type { Optional } from "canvas/primitives/types";
+import { Binding } from "config/bindings";
+import type { ImmutableSetView } from "ext/Set";
 
 import type {
     MouseClickEvent,

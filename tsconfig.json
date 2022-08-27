@@ -7,11 +7,6 @@
         "target": "es6",
         "lib": ["es6", "dom"],
         "baseUrl": "src/",
-        "paths": {
-            "@canvas/*": ["canvas/*"],
-            "@config/*": ["config/*"],
-            "@ext/*": ["ext/*"]
-        },
         "forceConsistentCasingInFileNames": true
     },
     "include": [

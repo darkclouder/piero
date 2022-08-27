@@ -1,4 +1,4 @@
-import { EventBase, EventHandler } from "@canvas/primitives/events";
+import { EventBase, EventHandler } from "canvas/primitives/events";
 
 export class StateMachineTransitionEvent<T> extends EventBase<T> {
     constructor(mode: T) {

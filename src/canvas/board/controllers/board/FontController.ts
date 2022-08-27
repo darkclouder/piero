@@ -1,12 +1,12 @@
-import type { Board } from "@canvas/board/Board";
-import type { Subscription } from "@canvas/primitives/events";
+import type { Board } from "canvas/board/Board";
+import type { Subscription } from "canvas/primitives/events";
 import {
     createDomEventListener,
     EventBase,
     EventHandler,
     unsubscribeAll,
-} from "@canvas/primitives/events";
-import type { Optional } from "@canvas/primitives/types";
+} from "canvas/primitives/events";
+import type { Optional } from "canvas/primitives/types";
 
 export class Font {
     constructor(

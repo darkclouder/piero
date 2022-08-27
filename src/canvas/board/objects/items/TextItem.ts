@@ -1,14 +1,14 @@
-import type { Board } from "@canvas/board/Board";
-import type { Font } from "@canvas/board/controllers/board/FontController";
-import { getFontIdentifier } from "@canvas/board/controllers/board/FontController";
-import { BoardMode } from "@canvas/board/controllers/BoardMode";
-import { BoardItem } from "@canvas/board/objects/items/BoardItem";
-import { resetCursor } from "@canvas/primitives/dom";
-import type { Subscription } from "@canvas/primitives/events";
-import { unsubscribeAll } from "@canvas/primitives/events";
-import type { Vector2 } from "@canvas/primitives/space";
-import type { Optional } from "@canvas/primitives/types";
-import type { RenderContext } from "@canvas/render/RenderContext";
+import type { Board } from "canvas/board/Board";
+import type { Font } from "canvas/board/controllers/board/FontController";
+import { getFontIdentifier } from "canvas/board/controllers/board/FontController";
+import { BoardMode } from "canvas/board/controllers/BoardMode";
+import { BoardItem } from "canvas/board/objects/items/BoardItem";
+import { resetCursor } from "canvas/primitives/dom";
+import type { Subscription } from "canvas/primitives/events";
+import { unsubscribeAll } from "canvas/primitives/events";
+import type { Vector2 } from "canvas/primitives/space";
+import type { Optional } from "canvas/primitives/types";
+import type { RenderContext } from "canvas/render/RenderContext";
 
 export const MEASURE_FONT_SIZE = 20;
 

@@ -1,10 +1,10 @@
-import { GeometricObject } from "@canvas/board/objects/GeometricObject";
-import type { SelectionOverlay } from "@canvas/board/objects/ui/selectable/SelectionOverlay";
-import type { BoundingBox } from "@canvas/primitives/space";
-import type { Optional } from "@canvas/primitives/types";
-import type { RenderContext } from "@canvas/render/RenderContext";
-import type { Viewport } from "@canvas/render/Viewport";
-import { defaultFrameColor } from "@config/draw";
+import { GeometricObject } from "canvas/board/objects/GeometricObject";
+import type { SelectionOverlay } from "canvas/board/objects/ui/selectable/SelectionOverlay";
+import type { BoundingBox } from "canvas/primitives/space";
+import type { Optional } from "canvas/primitives/types";
+import type { RenderContext } from "canvas/render/RenderContext";
+import type { Viewport } from "canvas/render/Viewport";
+import { defaultFrameColor } from "config/draw";
 
 export class SelectioFrameStyle {
     constructor(
