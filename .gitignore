@@ -7,9 +7,8 @@
 !.prettierrc.js
 
 # Build artifacts
-/dist/bundle.js
-/dist/production.js
-/dist/dev.js
+/dist
+!/dist/index.html
 /coverage
 
 # Dependency directories
