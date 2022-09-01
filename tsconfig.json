@@ -1,15 +1,21 @@
 {
     "compilerOptions": {
+        // TODO: "strict": true,
         "sourceMap": true,
         "noImplicitAny": true,
         "alwaysStrict": true,
         "allowSyntheticDefaultImports": true,
+        "declarationMap": true,
+        "declaration": true,
         "target": "es6",
+        "module": "commonjs",
+        "esModuleInterop": true,
         "lib": ["es6", "dom"],
         "baseUrl": "src/",
+        "outDir": "dist/lib",
         "forceConsistentCasingInFileNames": true
     },
     "include": [
         "src/**/*.ts"
-    ]
+    ],
 }

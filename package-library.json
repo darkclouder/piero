@@ -1,0 +1,13 @@
+{
+    "name": "pierolib",
+    "version": "1.0.0",
+    "private": true,
+    "description": "Library to work on and extend the general purpose canvas renderer piero for rendering objects on a big whiteboard.",
+    "keywords": [
+        "canvas",
+        "renderer",
+        "typescript"
+    ],
+    "license": "MIT",
+    "author": "darkclouder <2065342+darkclouder@users.noreply.github.com>"
+}

@@ -3,19 +3,27 @@
     "version": "1.0.0",
     "private": true,
     "description": "General purpose canvas renderer for rendering objects on a big whiteboard.",
-    "keywords": ["canvas", "renderer", "typescript"],
+    "keywords": [
+        "canvas",
+        "renderer",
+        "typescript"
+    ],
     "license": "MIT",
     "author": "darkclouder <2065342+darkclouder@users.noreply.github.com>",
     "scripts": {
         "build": "npm run check && npm run build-no-check",
         "build-no-check": "webpack --mode=production",
         "build-dev": "webpack --mode=development",
+        "build-library": "rm -r dist/lib; npm run check && tsc && tsc-alias",
         "check": "npm run lint && npm run testcov",
         "dev": "webpack-dev-server --mode=development",
         "format": "prettier -w src",
         "lint": "eslint src && prettier -c src",
         "test": "mocha 'src/test/**/*.ts'",
-        "testcov": "nyc mocha 'src/test/**/*.ts'"
+        "testcov": "nyc mocha 'src/test/**/*.ts'",
+        "prepare-pack-library": "npm run build-library && cp package-library.json dist/lib/package.json && cp README.md LICENSE.md dist/lib",
+        "pack-library": "npm run prepare-pack-library && (cd dist/lib && npm pack)",
+        "publish-library": "npm run prepare-pack && (cd dist/lib && npm publish)"
     },
     "nyc": {
         "all": true,
@@ -49,6 +57,7 @@
         "prettier": "2.1.2",
         "ts-loader": "^8.0.4",
         "ts-node": "^10.9.1",
+        "tsc-alias": "^1.7.0",
         "tsconfig-paths": "^3.9.0",
         "tsconfig-paths-webpack-plugin": "^3.3.0",
         "typescript": "^4.0.3",

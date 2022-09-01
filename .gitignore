@@ -1,6 +1,7 @@
 # Dot files
 **/.*
 !.gitignore
+!.npmignore
 !.eslintrc.js
 !.mocharc.js
 !.prettierignore
